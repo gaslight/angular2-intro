@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "server": "live-server"
+    "start": "live-server"
   },
   "jspm": {
     "directories": {},
