@@ -1,7 +1,10 @@
 import {Component} from 'angular2/core';
+import CandidateDetails from "./candidate-details";
+
 @Component({
     selector: 'my-app',
-    templateUrl: "app/app.html"
+    templateUrl: "app/app.html",
+    directives: [CandidateDetails]
 })
 export default class AppComponent {
   constructor() {

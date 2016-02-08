@@ -2,10 +2,4 @@ Here are the candidates:
 <ul>
   <li *ngFor="#candidate of candidates" (click)="selectCandidate(candidate)">{{candidate.name}}</li>
 </ul>
-Details:
-<dl>
-  <dt>Id</dt>
-  <dd>{{selectedCandidate.id}}</dd>
-  <dt>Name</dt>
-  <dd>{{selectedCandidate.name}}</dd>
-</dl>
+<candidate-details [candidate]="selectedCandidate"></candidate-details>
