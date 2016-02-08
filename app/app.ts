@@ -3,4 +3,8 @@ import {Component} from 'angular2/core';
     selector: 'my-app',
     templateUrl: "app/app.html"
 })
-export default class AppComponent { }
+export default class AppComponent {
+  constructor() {
+    this.candidates = [{id: 1, name: "Joe"}, {id: 2, name: "Jane"}];
+  }
+}
