@@ -7,4 +7,8 @@ export default class AppComponent {
   constructor() {
     this.candidates = [{id: 1, name: "Joe"}, {id: 2, name: "Jane"}];
   }
+
+  selectCandidate(candidate) {
+    this.selectedCandidate = candidate;
+  }
 }
