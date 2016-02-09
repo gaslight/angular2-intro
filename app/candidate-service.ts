@@ -11,4 +11,9 @@ export default class CandidateService {
   getCandidates() {
     return this.http.get("http://localhost:8000/candidates").map( (response) => response.json());
   }
+
+  getCandidate(id) {
+    return this.http.get(`http://localhost:8000/candidates/${id}`).map( (response) => response.json());
+  }
+
 }

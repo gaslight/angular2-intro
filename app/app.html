@@ -1,5 +1,5 @@
 Here are the candidates:
 <ul>
-  <li *ngFor="#candidate of candidates" (click)="selectCandidate(candidate)">{{candidate.name}}</li>
+  <li *ngFor="#candidate of candidates"><a [routerLink]="['CandidateDetails', {id: candidate.id}]">{{candidate.name}}</a></li>
 </ul>
-<candidate-details [candidate]="selectedCandidate"></candidate-details>
+<router-outlet></router-outlet>
