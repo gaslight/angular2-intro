@@ -15,6 +15,10 @@ This is yet another starter repo for an angular2 project using jspm and typescri
     ```
     npm install
     jspm install
-    npm run server
+    npm run start
     ```
-  3. Enjoy!
+  3. In separate window start api server
+    ```
+    npm run api
+    ```
+  4. Enjoy!
