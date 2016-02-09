@@ -9,7 +9,10 @@ import CandidateService from "./candidate-service";
 })
 export default class AppComponent {
   constructor(candidateService: CandidateService) {
-    this.candidates = candidateService.candidates;
+    this.candidateService = candidateService;
+    this.candidateService.getCandidates().subscribe( (candidates) => {
+      this.candidates = candidates;
+    });
   }
 
   selectCandidate(candidate) {
