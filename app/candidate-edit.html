@@ -1,0 +1,4 @@
+<form *ngIf="candidate">
+  <label>Name: <input [(ngModel)]="candidate.name" /></label>
+  <input type="button" value="Save" (click)="saveCandidate()" />
+</form>

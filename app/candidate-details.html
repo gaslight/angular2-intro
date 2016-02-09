@@ -5,3 +5,4 @@ Details:
   <dt>Name</dt>
   <dd>{{candidate?.name}}</dd>
 </dl>
+<a *ngIf="candidate" [routerLink]="['CandidateEdit', {id: candidate.id}]">Edit</a>
